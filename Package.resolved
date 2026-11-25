@@ -13,7 +13,7 @@
     {
       "identity" : "dsl",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/DSL.git",
+      "location" : "https://github.com/swift-dsl/DSL.git",
       "state" : {
         "branch" : "master",
         "revision" : "92957f2f62db2627638574ae5eaa055e7b1c4f73"
@@ -85,7 +85,7 @@
     {
       "identity" : "tokens",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Tokens.git",
+      "location" : "https://github.com/swift-langs/Tokens.git",
       "state" : {
         "branch" : "master",
         "revision" : "a52f358adda442f563771a318fc70d6a02c6b16e"
