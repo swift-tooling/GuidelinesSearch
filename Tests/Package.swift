@@ -17,7 +17,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/leviouwendijk/Guidelines.git",
+            url: "https://github.com/swift-tooling/Guidelines.git",
             branch: "master"
         ),
         .package(path: ".."),

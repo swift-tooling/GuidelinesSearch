@@ -31,7 +31,7 @@
     {
       "identity" : "guidelines",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Guidelines.git",
+      "location" : "https://github.com/swift-tooling/Guidelines.git",
       "state" : {
         "branch" : "master",
         "revision" : "e6215dfa9f34fb219c17fcd2f9c652c80bd28ed5"
