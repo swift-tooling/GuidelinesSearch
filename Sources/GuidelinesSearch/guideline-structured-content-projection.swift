@@ -57,6 +57,39 @@ public enum GuidelineStructuredContentProjection {
                     $0.map(text)
                 }
             )
+
+        case .heading(
+            _,
+            _,
+            let content
+        ):
+            return text(content)
+
+        case .image(
+            _,
+            let alt
+        ):
+            return alt
+
+        case .definitions(let definitions):
+            return joined(
+                definitions.flatMap {
+                    [
+                        text($0.term),
+                        text($0.description),
+                    ]
+                }
+            )
+
+        case .listing:
+            return ""
+
+        case .native(
+            _,
+            _,
+            let fallback
+        ):
+            return text(fallback)
         }
     }
 
@@ -77,8 +110,15 @@ public enum GuidelineStructuredContentProjection {
             return content
 
         case .emphasis(let content),
-             .strong(let content):
+             .strong(let content),
+             .link(_, let content):
             return text(content)
+
+        case .citation:
+            return content.plainText
+
+        case .footnote(let footnote):
+            return text(footnote)
         }
     }
 
