@@ -25,15 +25,15 @@ let package = Package(
             branch: "master"
         ),
         .package(
-            url: "https://github.com/leviouwendijk/Fuzzy.git",
+            url: "https://github.com/swift-lco/Fuzzy.git",
             branch: "master"
         ),
         .package(
-            url: "https://github.com/leviouwendijk/Matching.git",
+            url: "https://github.com/swift-lco/Matching.git",
             branch: "master"
         ),
         .package(
-            url: "https://github.com/leviouwendijk/Ranking.git",
+            url: "https://github.com/swift-lco/Ranking.git",
             branch: "master"
         ),
     ],
