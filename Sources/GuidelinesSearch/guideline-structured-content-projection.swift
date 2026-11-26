@@ -27,8 +27,32 @@ public enum GuidelineStructuredContentProjection {
         ):
             return source
 
-        case .quote(let content):
-            return text(content)
+        case .quote(
+            let content,
+            let attribution
+        ):
+            return joined([
+                text(content),
+                attribution.map(text) ?? "",
+            ])
+
+        case .figure(
+            _,
+            let content,
+            let caption
+        ):
+            return joined([
+                text(content),
+                caption.map(text) ?? "",
+            ])
+
+        case .verse(let lines):
+            return joined(
+                lines.map(text)
+            )
+
+        case .rule:
+            return ""
 
         case .list(
             _,
