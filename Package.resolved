@@ -16,7 +16,7 @@
       "location" : "https://github.com/swift-dsl/DSL.git",
       "state" : {
         "branch" : "master",
-        "revision" : "d6c5c62eef57fed529d68fb970ef38e226ba0f64"
+        "revision" : "c6827fa7b79f9a6aa7a8313abeed5c31bcb35923"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/swift-tooling/Guidelines.git",
       "state" : {
         "branch" : "master",
-        "revision" : "ea6fc216d5d336b436ea7261daac27ee4d16c7d6"
+        "revision" : "f99e9e2e9461cd26a1459ea49ba3b72ae6181848"
       }
     },
     {

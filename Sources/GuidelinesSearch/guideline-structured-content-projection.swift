@@ -108,6 +108,11 @@ public enum GuidelineStructuredContentProjection {
         case .listing:
             return ""
 
+        case .notes(let notes):
+            return joined(
+                notes.map { text($0.content) }
+            )
+
         case .native(
             _,
             _,
@@ -143,6 +148,9 @@ public enum GuidelineStructuredContentProjection {
 
         case .footnote(let footnote):
             return text(footnote)
+
+        case .noteReference:
+            return ""
         }
     }
 
